@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@middy/core": "^3.0.3",
+    "@middy/error-logger": "^3.0.3",
+    "@middy/http-error-handler": "^3.0.3",
+    "@middy/http-event-normalizer": "^3.0.3",
+    "@middy/http-header-normalizer": "^3.0.3",
+    "@middy/http-json-body-parser": "^3.0.3",
+    "@middy/validator": "^3.0.3",
+    "aws-sdk": "^2.1137.0",
+    "http-errors": "^2.0.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "debug": "SET SLS_DEBUG=* && npx serverless offline -s dev"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.8.0"
+  }
+}

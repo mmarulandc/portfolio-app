@@ -1,0 +1,41 @@
+{
+
+  "version": "2.0",
+  "routeKey": "GET /user",
+  "rawPath": "/user",
+  "rawQueryString": "",
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br",
+    "content-length": "261",
+    "content-type": "application/json",
+    "host": "zouxeojc54.execute-api.us-east-1.amazonaws.com",
+    "postman-token": "eb710099-1fa3-4b56-8ea3-e847290e3193",
+    "user-agent": "PostmanRuntime/7.26.8",
+    "x-amzn-trace-id": "Root=1-6285377b-20fbbdb37e0bbcdc6ca2c237",
+    "x-forwarded-for": "181.140.139.64",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https"
+  },
+  "requestContext": {
+    "accountId": "951079211721",
+    "apiId": "zouxeojc54",
+    "domainName": "zouxeojc54.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "zouxeojc54",
+    "http": {
+      "method": "GET",
+      "path": "/user",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "181.140.139.64",
+      "userAgent": "PostmanRuntime/7.26.8"
+    },
+    "requestId": "SVWbXh8zoAMEMOA=",
+    "routeKey": "GET /user",
+    "stage": "$default",
+    "time": "18/May/2022:18:14:19 +0000",
+    "timeEpoch": 1652897659731
+  },
+  "body": {},
+  "pathParameters": { "portfolioId": "dfddb1fe-228f-41fb-a419-3b3a87960188"},
+  "isBase64Encoded": false
+}
