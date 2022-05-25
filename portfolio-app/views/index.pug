@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  .container
+    .list-group
+      for portfolio in portfolios
+        a.list-group-item.list-group-item-action.flex-column.align-items-start(href=`/${portfolio.portfolioId}`)
+          .d-flex.w-100.justify-content-between
+            h5.mb-1= portfolio.title
+          p.mb-1= portfolio.description
+          small @#{portfolio.twitterUserName} on Twitter
+

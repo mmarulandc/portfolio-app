@@ -1,0 +1,36 @@
+extends layout
+
+
+block content
+  .container.bg-light
+    .row
+      .col
+        .mt-2.container
+          .row
+            .w-100.p-3
+              img.img-thumbnail(src=`${portfolio.imageUrl}`)
+          .row
+            .mt-4.card
+              h4.card-header.mb-2.text-muted #{portfolio.title}'s Timeline
+              .card-body
+                for tweet in timeLineTweets
+                    .row.timeline
+                      .col-2.timeline-img
+                        img.img-thumbnail(src=`${tweet.userImage}`)
+                      
+                      .col-6.tweet-description
+                        .row
+                          h4=tweet.username
+                          p=tweet.text
+
+
+
+      .col
+        .container
+          .h2=portfolio.title
+        .mt-4.card
+            h4.card-header.mb-2.text-muted="My Work Experience"
+            .card-body
+              p.card-text= portfolio.description
+
+              
