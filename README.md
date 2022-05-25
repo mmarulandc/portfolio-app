@@ -37,6 +37,8 @@ This is API based on serverless architecture using the Serveless Framework with 
 
 And that was a brief explanation about how I built the application, I did not get to make it run locally on another pc besides mine, but the application is currently deployed.
 
+It took me around 25 hours to finish the entire app, from the beginning with zero expertise using serverless architecture.
+
 ## Running test cases
 
 
