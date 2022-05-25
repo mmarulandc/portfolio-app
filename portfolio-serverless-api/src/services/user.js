@@ -46,7 +46,7 @@ class UserService {
       }
       return users;
     } catch (error) {
-      if(error.statusCode === 404) {
+      if (error.statusCode === 404) {
         throw error;
       }
       throw new createError.InternalServerError(
@@ -67,7 +67,7 @@ class UserService {
         throw new createError.NotFound();
       }
 
-      return user;
+      return user.Item;
     } catch (error) {
       if (error.statusCode === 404) {
         throw error;
@@ -81,8 +81,7 @@ class UserService {
   updateUser = async (portfolioId, targetProps) => {
     try {
       const expression = generateUpdateQuery(targetProps);
-      console.log(portfolioId);
-      await this.getUser(portfolioId)
+      await this.getUser(portfolioId);
       const data = await this.dynamodb
         .update({
           TableName: this.tableName,
@@ -91,7 +90,7 @@ class UserService {
           ReturnValues: "ALL_NEW",
         })
         .promise();
-      return data;
+      return data.Attributes;
     } catch (error) {
       if (error.statusCode === 404) {
         throw error;

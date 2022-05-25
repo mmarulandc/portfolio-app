@@ -9,7 +9,7 @@ const updateUserSchema = {
         title: { type: "string" },
         twitterUserName: { type: "string" },
       },
-
+      additionalProperties: false,
       minProperties: 1,
     },
     pathParameters: {

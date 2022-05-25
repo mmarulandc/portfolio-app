@@ -25,7 +25,7 @@ const updateUser = middy(async (event) => {
     const targetParams = event.body;
     const { portfolioId } = event.pathParameters;
     const data = await userService.updateUser(portfolioId, targetParams);
-    return sendResponse(200, data.Attributes);
+    return sendResponse(200, data);
   } catch (error) {
     throw error;
   }
@@ -45,7 +45,7 @@ const getUser = middy(async (event) => {
     const { portfolioId } = event.pathParameters;
     const user = await userService.getUser(portfolioId);
 
-    return sendResponse(200, user.Item);
+    return sendResponse(200, user);
   } catch (error) {
     throw error;
   }
